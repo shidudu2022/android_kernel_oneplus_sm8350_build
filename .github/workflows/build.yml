@@ -6,6 +6,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     - name: Checkout kernel source
       uses: actions/checkout@v3
@@ -37,3 +39,15 @@ jobs:
         path: |
           sm8350/out/ak3/ChangeLog.txt
           sm8350/out/ak3/*.zip
+
+    - name: Checkout build repo
+      uses: actions/checkout@v4
+      with:
+        ref: build
+        path: build-repo
+
+    - name: Publish release to main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        bash build-repo/.github/scripts/publish-to-main.sh release/lineage-20 sm8350/out/ak3
