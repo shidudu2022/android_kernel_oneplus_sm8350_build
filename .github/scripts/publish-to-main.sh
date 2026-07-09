@@ -31,6 +31,7 @@ fi
 
 cd "$WORK_DIR/repo"
 mkdir -p "$RELEASE_DIR"
+ARTIFACT_DIR="$(cd "$ARTIFACT_DIR" && pwd)"
 cp "$ARTIFACT_DIR"/*.zip "$RELEASE_DIR/"
 cp "$ARTIFACT_DIR"/ChangeLog.txt "$RELEASE_DIR/"
 git add "$RELEASE_DIR"
