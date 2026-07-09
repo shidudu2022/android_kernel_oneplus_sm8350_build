@@ -24,7 +24,8 @@ jobs:
 
     - name: Android kernel build
       run: |
-        sudo apt install libdebuginfod-dev
+        sudo apt-get update
+        sudo apt-get install -y libdebuginfod-dev build-essential flex bison libssl-dev libelf-dev bc rsync libncurses-dev python3 python-is-python3
         export PATH="$(pwd)/toolchain/bin:${PATH}"
         cd sm8350 && bash build.sh
         git log --no-decorate --oneline -n 100 > out/ak3/ChangeLog.txt
