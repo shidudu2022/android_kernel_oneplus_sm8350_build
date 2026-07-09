@@ -13,9 +13,9 @@ jobs:
       uses: actions/checkout@v3
       with:
         repository: awakened1712/android_kernel_oneplus_sm8350
-        ref: lineage-20
+        ref: feat-base
         path: sm8350
-        fetch-depth: 100
+        fetch-depth: 1
 
     - name: Checkout gcc toolchain
       uses: actions/checkout@v3
@@ -64,4 +64,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        bash build-repo/.github/scripts/publish-to-main.sh release/lineage-20-ksu sm8350/out/ak3
+        bash build-repo/.github/scripts/publish-to-main.sh release/ksu sm8350/out/ak3
