@@ -24,6 +24,17 @@ jobs:
         ref: 05cb20a52f12389c3f2340b5103485108feae302
         path: toolchain
 
+    - name: Checkout patches
+      uses: actions/checkout@v3
+      with:
+        ref: build
+        path: patches
+
+    - name: Apply anykernel patch
+      run: |
+        cd sm8350
+        git apply ../patches/anykernel.patch
+
     - name: Android kernel build
       run: |
         sudo apt-get update
