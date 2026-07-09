@@ -1,0 +1,100 @@
+a3b9482f7a Merge branch 'LineageOS:lineage-20' into lineage-20
+b67a39b1d3 fs/namespace.c: add path_umount implementation
+62f6bf8ea7 Merge remote-tracking branch 'sm8350/lineage-20' into lineage-20
+b976c2c438 Merge tag 'ASB-2024-01-05_11-5.4' of https://android.googlesource.com/kernel/common into android13-5.4-lahaina
+91a22ef8a2 Merge remote-tracking branch 'sm8350/lineage-20' into lineage-20
+1d0ac46c5e Merge tag 'LA.UM.9.16.r1-13800-MANNAR.QSSI14.0' into android13-5.4-lahaina
+216d858e56 Merge tag 'LA.UM.9.16.r1-13800-MANNAR.QSSI14.0' into android13-5.4-lahaina
+080aaae37c Merge tag 'LA.UM.9.16.r1-13800-MANNAR.QSSI14.0' into android13-5.4-lahaina
+8446d51890 msm: adsprpc : Fix use after free in fastrpc_internal_mem_unmap
+c0d386ea0a Merge tag 'LA.UM.9.14.1.r1-12400-QCM6490.QSSI14.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/video-driver into android13-5.4-lahaina
+5fba8adc73 Merge tag 'LA.UM.9.14.1.r1-12400-QCM6490.QSSI14.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/display-drivers into android13-5.4-lahaina
+5972580a35 Merge tag 'LA.UM.9.14.1.r1-12400-QCM6490.QSSI14.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/audio-kernel into android13-5.4-lahaina
+582690d364 Merge tag 'LA.UM.9.14.1.r1-12400-QCM6490.QSSI14.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into android13-5.4-lahaina
+11d9c0516e Merge tag 'LA.UM.9.14.1.r1-12400-QCM6490.QSSI14.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into android13-5.4-lahaina
+64be530a10 Merge tag 'LA.UM.9.14.1.r1-12400-QCM6490.QSSI14.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-5.4-lahaina
+002597f92e Merge tag 'LA.UM.9.14.r1-23600-LAHAINA.QSSI14.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-5.4-lahaina
+ee01f0189f Merge tag 'LA.UM.9.14.r1-23600-LAHAINA.QSSI14.0' of https://git.codelinaro.org/clo/la/kernel/msm-5.4 into android13-5.4-lahaina
+9e47659a18 Merge remote-tracking branch 'awakened1712/feat-base' into HEAD
+66583f17a3 Merge remote-tracking branch 'awakened1712/feat-misc' into HEAD
+21459c7bc1 arch/arm64/dts: lahaina: Optimize the energy model
+44dc165b57 Kbuild: Implement Lahaina specific optimization
+fc1f1854d2 Revert "bdi: Do not use freezable workqueue"
+ed84426e83 arm64: cache: Set ARCH_DMA_MINALIGN to L1_CACHE_BYTES
+dc2bc3fc7f drm/msm: dsi-ctrl: remove extra buffer copy
+1c76c4899c GKI: wireless: allow disabling NL80211_TESTMODE
+ca6307364e binder: Reserve caches for small, high-frequency memory allocations
+29342009f2 msm/sde_fence: remove sde_fence_context->name
+89a8ec2012 msm: vidc: allocate kmem_buf_pool once
+e1712ededb dma_buf: use kmem_cache pool for struct sync_file
+280ae36d82 dma_buf: use kmem_cache pool for struct dma_buf_attachment
+8199fcc8b3 drm/msm/sde: allocate kmem_fence_pool once
+0e1b1e8ca3 drm/msm/sde: use kmem_cache pool for struct sde_fence
+4fda87b55b drm/msm/sde: allocate kmem_fence_pool once
+434d0477c9 drm/msm/sde: use kmem_cache pool for struct sde_fence
+6ce49a9a16 drm/msm: use kmem_cache pool for struct vblank_work
+156078f2d6 msm: kgsl: use kmem_cache pool for draw objects
+86181ff0fe msm: camera: use kmem_cache pool for struct sync_user_payload
+61ef88ff9f msm: vidc: use kmem_cache pool for struct msm_vidc_buffer
+0db6b5c521 kernfs: use kmem_cache pool for struct kernfs_open_node/file
+0b2a2ac5d1 cgroup: use kmem_cache pool for struct cgrp_cset_link
+c6889bef0f drivers: power: oplus: Relax 'battery suspend wakelock'
+83f09f0364 msm: kgsl: Avoid gpu boot if it is already up
+25acb9eb58 arm64: dts: lahaina: Affine cdsprm QoS requests to LITTLE cores
+c3ff931dd7 ANDROID: block: Improve shared tag set performance
+8f922bb195 sock: inline SELinux's sk_security to struct sock
+7792426f15 fs: remove remaining android_fs tracings
+a5ff64eeb0 f2fs: Remove additional tracings added by CAF
+396ba0fac4 ext4: remove additional tracings added by CAF
+e2bc7b40c4 fs: f2fs: Demote GC thread to idle scheduler class
+b1ebbf654c fs: f2fs: Set ioprio of GC kthread to idle
+2336bf875a arm64: Inline the spin lock function family
+07171e23de drivers: usb: dwc3-msm: Optimize pm_qos usage
+a40b082536 techpack: asoc: lahaina: Remove pm_qos
+dad4107bb4 qcacld-3.0: Fully disable PM QoS when CLD_PM_QOS is disabled
+f7d0254564 msm/dsi: free phy_timing_val if it's not used anymore
+6b077faee8 fixup! disp: msm: sde: Don't allocate memory dynamically for plane states
+1b309b5525 disp: msm: sde: Don't allocate memory dynamically for plane states
+5838325a6e drm/msm/sde: Don't allocate memory dynamically for CRTC atomic check
+548a74aed5 drm/msm/sde: Don't read and clear VBIF errors upon commit
+b072d82751 drm/msm/sde: Skip heavy autorefresh checks when it's not enabled
+ddd5015d60 techpack: display: Add some bp hints to hot paths
+4ff45ca1c5 qos: Speed up plist traversal in pm_qos_set_value_for_cpus()
+9cf37cdfb0 qos: Fix PM QoS requests almost never shutting off
+fca2ff7f2d qos: Remove pm_qos_update_request_timeout() API
+77a354d928 qos: Speed up pm_qos_set_value_for_cpus()
+eb86ff6ec0 qos: Don't disable interrupts while holding pm_qos_lock
+8db7a984e0 qos: Replace cpumasks with atomic bitwise operations
+32152405c4 power: qos: Fix accessing pm_qos_request struct
+a66a83d588 kernel: power: qos: Remove check for core isolation while cluster LPMs
+1e661f24a6 pmqos: Enable cpu isolation awareness
+7821a411a3 qos: Disable irq notifier when qos request is removed
+40eee0af60 qos: Pass the list of cpus with affected qos to notifer
+9b82c3bd30 ANDROID: GKI: qos: Register irq notify after adding the qos request
+36544ea26f ANDROID: GKI: QoS: Enhance framework to support cpu/irq specific QoS requests
+7648a34795 drm: Reduce latency while processing atomic ioctls
+744ecd0c5a msm: kgsl: Reduce latency while processing ioctls
+3f9e36de13 disp: msm: dsi: Don't busy wait in dsi_display_handle_fifo_overflow
+6a44ce701d Revert "msm: kgsl: Add tracepoints for the pools"
+78e06fca28 msm: kgsl: Use lock-less list for page pools
+4953358e36 msm: kgsl: Avoid dynamically allocating small command buffers
+0403c878da msm: kgsl: Don't allocate memory dynamically for temp command buffers
+df4da47a97 msm: kgsl: Don't busy wait for fenced GMU writes when possible
+3d47048679 msm: kgsl: Remove unneeded profiling from ringbuffer submission
+7336181ca3 msm: kgsl: Don't try to wait for fences that have been signaled
+8c0f7a7eda msm: kgsl: Remove sync fence names
+6adca1107c msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input
+15febf1ab3 msm: kgsl: GPU governors don't need to be modules
+5840f0e8f2 Revert "msm: kgsl: Add per process GPU memory usage trace"
+4f68a5405b msm-adreno-tz: Get rid of the sample lock
+227c20c351 msm-adreno-tz: Get rid of the suspend lock
+630ee1759a msm: kgsl: Fix page pool order calculation
+3afc691c46 xattr: Avoid dynamically allocating memory in getxattr for small xattrs
+682f932438 quota_tree: Avoid dynamic memory allocations
+70b6942dad locking/qspinlock: Micro-optimize pending state waiting for unlock
+24db48c14b locking/osq: Use optimized spinning loop for arm64
+74e11783d2 techpack: display: Set AoD high/low mode and dimlayer based on bl_level
+d98fdc1fa0 techpack: display: Don't skip LP1 cmd for AoD with fingerprint_mode on
+710a08b79f techpack: display: Make dimlayer transparent in LP1/LP2 power mode
+3927c920b9 techpack: display: Set oplus_dimlayer_hbm when switching power modes
+8addb9e5b0 techpack/video: msm: vidc: Disable debug logs
