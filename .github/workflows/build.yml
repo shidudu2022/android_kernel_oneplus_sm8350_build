@@ -46,8 +46,10 @@ jobs:
         ref: build
         path: build-repo
 
-    - name: Publish release to main
+    - name: Publish GitHub Release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        bash build-repo/.github/scripts/publish-to-main.sh release/kernel sm8350/out/ak3
+        TAG="kernel-$(date -u '+%Y%m%d-%H%M')"
+        TITLE="Kernel $(date -u '+%Y-%m-%d %H:%M UTC')"
+        bash build-repo/.github/scripts/publish-to-release.sh "$TAG" "$TITLE" sm8350/out/ak3
