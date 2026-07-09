@@ -36,6 +36,7 @@ jobs:
         git submodule add https://github.com/tiann/KernelSU.git
         git submodule update --init --recursive
         git apply ../patches/ksu.patch
+        git apply ../patches/anykernel.patch
 
     - name: Android kernel build
       run: |
